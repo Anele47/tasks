@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager Dashboard</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="task-manager">
+    <div class="dashboard-container">
+      <!-- SIDEBAR -->
+      <aside class="sidebars">
+        <div class="task-logo">
+          <i class="fa-solid fa-square-check"></i>
+          <h2>Task Manager</h2>
+        </div>
+
+        <nav>
+          <ul>
+            <li class="task-active">
+              <a href="#">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+              </a>
+            </li>
+
+            <li>
+              <a href="tasks.html">
+                <i class="fa-solid fa-list-check"></i>
+                Tasks
+              </a>
+            </li>
+
+            <li>
+              <a href="calendar.html">
+                <i class="fa-solid fa-calendar"></i>
+                Calendar
+              </a>
+            </li>
+
+             <li>
+              <a href="analytics.html">
+                <i class="fa-solid fa-chart-line"></i>
+                Analytics
+              </a>
+            </li>
+
+            <li>
+             <a href="profile.html">
+                <i class="fa-solid fa-user"></i>
+                Profile
+              </a>
+            </li>
+
+            <li>
+              <a href="settings.html">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="logout">
+          <a href="index.html">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+          </a>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="main-contents">
+        <!-- TOP BAR -->
+        <div class="dashboard-topbar">
+          <h1>Dashboard</h1>
+
+          <div class="dashboard-icons">
+            <i class="fa-regular fa-bell"></i>
+          </div>
+        </div>
+        <div class="dashboard-welcome">
+          <div class="welcome-text">
+            <h1>Welcome Back 👋</h1>
+            <p>Manage your daily activities and stay productive.</p>
+          </div>
+
+          <img src="https://cdn-icons-png.flaticon.com/512/2387/2387635.png" />
+        </div>
+
+        <!-- MOTIVATION -->
+        <div class="quote-box">
+          <h2>Daily Motivation</h2>
+          <p id="quote">Loading quote...</p>
+        </div>
+
+        <!-- CARDS -->
+        <div class="dashboard-card">
+
+    <div class="dashboard-cards">
+      <h3>Total Tasks</h3>
+      <p id="totalTasks">0</p>
+    </div>
+
+    <div class="dashboard-cards">
+      <h3>Completed</h3>
+      <p id="completedTasks">0</p>
+    </div>
+
+    <div class="dashboard-cards">
+      <h3>Pending</h3>
+      <p id="pendingTasks">0</p>
+    </div>
+
+    <div class="dashboard-cards">
+      <h3>Progress</h3>
+      <p id="progressPercentage">0%</p>
+    </div>
+
+  </div>
+      </main>
+
+    <script src="home.js"></script>
+  </body>
+  <footer>
+
+    <h3>MyTasks</h3>
+
+    <p>
+        Organize your life one task at a time.
+    </p>
+
+    <div class="socials">
+
+        <i class="fab fa-github"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-twitter"></i>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 MyTasks. All Rights Reserved.
+    </p>
+
+</footer>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Manager</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="tasks">
+   <div class="tasks-containers">
+
+  <!-- SIDEBAR -->
+   <aside class="sidebars">
+        <div class="task-logo">
+          <i class="fa-solid fa-square-check"></i>
+          <h2>Task Manager</h2>
+        </div>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="home.html">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+              </a>
+            </li>
+
+            <li  class="task-active">
+              <a href="#">
+                <i class="fa-solid fa-list-check"></i>
+                Tasks
+              </a>
+            </li>
+
+            <li>
+              <a href="calendar.html">
+                <i class="fa-solid fa-calendar"></i>
+                Calendar
+              </a>
+            </li>
+
+             <li>
+              <a href="analytics.html">
+                <i class="fa-solid fa-chart-line"></i>
+                Analytics
+              </a>
+            </li>
+
+            <li>
+             <a href="profile.html">
+                <i class="fa-solid fa-user"></i>
+                Profile
+              </a>
+            </li>
+
+            <li>
+              <a href="settings.html">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="logout">
+          <a href="index.html">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+          </a>
+        </div>
+      </aside>
+
+  <!-- TASK CONTAINER -->
+   <div class="main-contents">
+ 
+
+    <!-- TOP CONTROLS -->
+    <div class="top-controls">
+
+      <input type="text" id="taskInput" placeholder="Enter a task...">
+
+      <input type="date" id="dueDate">
+
+      <select id="prioritySelect">
+        <option value="normal">Normal</option>
+        <option value="important">Important</option>
+      </select>
+
+      <button id="addTaskBtn">Add Task</button>
+
+    </div>
+
+    <!-- SEARCH + FILTER -->
+    <!-- SEARCH BAR -->
+<div class="search-section">
+    <input type="text" id="searchInput" placeholder="Search tasks...">
+</div>
+
+<!-- FILTER BUTTONS -->
+   <div class="filter-section">
+
+    <button class="filter-btn active" data-filter="all">
+        All Tasks
+    </button>
+
+    <button class="filter-btn" data-filter="completed">
+        Completed
+    </button>
+
+    <button class="filter-btn" data-filter="pending">
+        Pending
+    </button>
+
+    <button class="filter-btn" data-filter="important">
+        Important
+    </button>
+
+   </div>
+
+    <!-- TASK LIST -->
+    <div id="taskList" class="task-list"></div>
+</div>
+  </main>
+
+  <script src="tasks.js"></script>
+
+  <div id="footer"></div>
+
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
+</body>
+
+</html>

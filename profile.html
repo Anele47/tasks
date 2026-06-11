@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+  </head>
+  <body class="profile">
+
+     <!-- SIDEBAR -->
+   <aside class="sidebars">
+        <div class="task-logo">
+          <i class="fa-solid fa-square-check"></i>
+          <h2>Task Manager</h2>
+        </div>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="home.html">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+              </a>
+            </li>
+
+            <li>
+              <a href="tasks.html">
+                <i class="fa-solid fa-list-check"></i>
+                Tasks
+              </a>
+            </li>
+
+            <li>
+              <a href="calendar.html">
+                <i class="fa-solid fa-calendar"></i>
+                Calendar
+              </a>
+            </li>
+
+             <li>
+              <a href="analytics.html">
+                <i class="fa-solid fa-chart-line"></i>
+                Analytics
+              </a>
+            </li>
+
+            <li class="task-active">
+              <a href="#">
+                <i class="fa-solid fa-chart-line"></i>
+                Profile
+              </a>
+            </li>
+
+            <li>
+              <a href="settings.html">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="logout">
+          <a href="index.html">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+          </a>
+        </div>
+      </aside>
+
+
+      <main class="contents">
+        <div class="profile-card">
+          <div class="profile-header">
+            <div class="user-info">
+              <img
+                id="profileImage"
+                src="https://via.placeholder.com/120"
+                alt="Profile"
+              />
+
+              <div>
+                <h1 id="profileName">User Name</h1>
+                <p id="profileEmail">user@email.com</p>
+              </div>
+            </div>
+
+            <a href="settings.html">
+              <button>Edit Profile</button>
+            </a>
+          </div>
+
+          <div class="profile-stats">
+            <div class="profile-stat">
+              <h2 id="totalTasks">0</h2>
+              <p>Total Tasks</p>
+            </div>
+
+            <div class="profile-stat">
+              <h2 id="completedTasks">0</h2>
+              <p>Completed Tasks</p>
+            </div>
+
+            <div class="profile-stat">
+              <h2 id="completionRate">0%</h2>
+              <p>Completion Rate</p>
+            </div>
+
+            <div class="profile-stat">
+              <h2 id="streak">0</h2>
+              <p>Day Streak</p>
+            </div>
+          </div>
+
+          <div class="profile-about">
+            <h3>About Me</h3>
+            <p id="aboutMe">No bio added yet.</p>
+          </div>
+        </div>
+    </div>
+      </main>
+
+    <script src="profile.js"></script>
+  </body>
+  <footer>
+
+    <h3>MyTasks</h3>
+
+    <p>
+        Organize your life one task at a time.
+    </p>
+
+    <div class="socials">
+
+        <i class="fab fa-github"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-twitter"></i>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 MyTasks. All Rights Reserved.
+    </p>
+
+</footer>
+</html>

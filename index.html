@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="loginPage">
+    <div class="user-container">
+
+    <!-- Login Form -->
+    <div class="form-box active" id="loginForm">
+      <div class="icon">🔐</div>
+      <h2 class="title">Login</h2>
+
+      <input type="email" placeholder="Email Address" />
+      <input type="password" placeholder="Password" />
+
+      <button id="loginbtn">Login</button>
+
+      <p>
+        Don't have an account?
+        <span onclick="showRegister()">Register</span>
+      </p>
+    </div>
+
+    <!-- Register Form -->
+<div class="form-box" id="registerForm">
+  <div class="icon">📝</div>
+  <h2 class="title">Register</h2>
+
+  <input type="text" id="fullName" placeholder="Full Name" />
+  <input type="email" id="registerEmail" placeholder="Email Address" />
+  <input type="password" id="registerPassword" placeholder="Password" />
+  <input type="password" id="confirmPassword" placeholder="Confirm Password" />
+
+  <button id="registerBtn">Create Account</button>
+
+  <p>
+    Already have an account?
+    <span onclick="showLogin()">Login</span>
+  </p>
+</div>
+
+   <!--Forgot Password-->
+
+     <div class="forgot-password">
+                <a href="#" id="forgotLink">Forgot Password?</a>
+            </div>
+
+
+        <p class="message" id="message"></p>
+
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+ 
+  <div id="footer"></div>
+
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+</body>
+
+
+</html>
